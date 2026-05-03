@@ -1,16 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Flappy Space</title>
+    <title>P.F.S.</title>
+    <meta name="description"
+        content="Explora el vasto vacío estelar en Flappy Spaces. Un desafío constante con mecánicas únicas y personalización infinita.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/gif" href="DeathUltimate.gif">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-    <header>
-        <h1>En proceso</h1>
-    </header>
-</body>
 
-<script src="jsElement.js"></script>
+<body>
+
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <img src="DeathUltimate.gif" alt="Logo"
+                    style="height: 45px; image-rendering: pixelated; vertical-align: middle; margin-right: 10px;">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#metodo">Metodología</a></li>
+                <li><a href="#rng">RNG</a></li>
+                <li><a href="#ad">DA</a></li>
+                <li><a href="#descarga" class="btn-nav">Descargar</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <div class="scroll-progress"></div>
+    </header>
+
+    <main>
+        <section id="intro" class="hero">
+            <div class="hero-content">
+                <h1 class="reveal">Pixel <h2>Flappy Spaces</h2>
+                </h1>
+                <p class="reveal">Recorre lo inexplorado en el vasto vacío.</p>
+                <div class="hero-btns reveal">
+                    <a href="#descarga" class="btn btn-primary">Comenzar la aventura</a>
+                </div>
+            </div>
+            <div class="hero-bg" style="background-image: url('Background.png');"></div>
+        </section>
+
+        <section id="metodo" class="features">
+            <div class="container">
+                <h2 class="section-title reveal">Metodología</h2>
+
+                <div class="feature-row reveal">
+                    <div class="feature-img">
+                        <img src="UpAnimation.gif" alt="Cálculo de Aceleración">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Cálculo de Aceleración</h3>
+                        <p>La aceleración forma parte del constructo de dos variables diferentes, es decir, es igual a la
+                            constante de aceleración multiplicada por la diferencia de tiempo o delta: <br><br>
+                            <strong>a(t) = ac x delta(t)</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-row reverse reveal">
+                    <div class="feature-text">
+                        <h3>Velocidad Acelerada</h3>
+                        <p>La velocidad acelerada representa la suma de la velocidad inicial con respecto a la aceleración
+                            que lleve hasta ese momento: <br><br>
+                            <strong>v(t) = vi + a(t)</strong>
+                        </p>
+                    </div>
+                    <div class="feature-img">
+                        <img src="AllAnimationAstro_Impulse.gif" alt="Propulsión">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rng" class="features">
+            <div class="container">
+                <h2 class="section-title reveal">Random Number Generation</h2>
+
+                <div class="feature-row reveal">
+                    <div class="feature-img feature-img-large">
+                        <img src="Pilares.png" alt="RNG en Acción">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Entorno</h3>
+                        <p>Utilizamos algoritmos de generación de números aleatorios (RNG) para crear un escenario que nunca
+                            se repite. La aleatoriedad no es solo suerte, es la arquitectura de tu próximo desafío.</p>
+                    </div>
+                </div>
+
+                <div class="feature-row reverse reveal">
+                    <div class="feature-text">
+                        <h3>Obstaculos</h3>
+                        <p>Desde la posición de los pilares hasta las dimenciones su tamaño, el RNG asegura que
+                            cada "tap" sea una decisión crítica en un entorno siempre cambiante.</p>
+                    </div>
+                    <div class="feature-img">
+                        <img src="CollisionAstro.gif" alt="Variedad RNG">
+                    </div>
+                </div>
+
+                <div class="feature-row reveal">
+                    <div class="feature-img">
+                        <img src="Floating.gif" alt="Matemáticas del Vacío">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Matemáticas del Vacío</h3>
+                        <p>El RNG (Random Number Generator) es un sistema basado en la generación
+                            de números aleatorios que determina eventos impredecibles dentro de un
+                            juego, como el daño de un ataque, la aparición de enemigos o la obtención de objetos.
+                            Matemáticamente, el RNG simula una variable aleatoria: <br><br>
+                            X∼U(a,b)<br><br>
+                            donde X es un valor generado dentro de un intervalo [a,b] con distribución
+                            uniforme, lo que significa que todos los resultados posibles tienen la misma probabilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ad" class="features">
+            <div class="container">
+                <h2 class="section-title reveal">Derivative Acceleration</h2>
+
+                <div class="feature-row reveal">
+                    <div class="feature-img">
+                        <img src="AllAnimationAstro_FIre.gif" alt="Aceleración Derivada">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Aceleración Derivada</h3>
+                        <p>La velocidad de tu astronauta no es lineal. Aplicamos Aceleración Derivada (AD) para simular la
+                            inercia real del espacio. Cada salto es un cálculo de fuerza contra la gravedad estelar.</p>
+                    </div>
+                </div>
+
+                <div class="feature-row reverse reveal">
+                    <div class="feature-text">
+                        <h3>Control de Inercia</h3>
+                        <p>Entender la tasa de cambio de tu velocidad es clave para sobrevivir. El movimiento se siente
+                            orgánico y fluido, exigiendo precisión milimétrica en cada maniobra evasiva.</p>
+                    </div>
+                    <div class="feature-img">
+                        <img src="UpAnimation.gif" alt="Inercia">
+                    </div>
+                </div>
+
+                <div class="feature-row reveal">
+                    <div class="feature-img">
+                        <img src="DestroyPilar.gif" alt="Impulso Dinámico">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Impulso Dinámico</h3>
+                        <p>A medida que la aceleración aumenta, la derivada del movimiento se vuelve más compleja. Domina el
+                            flujo físico para alcanzar velocidades que rompan las barreras de la galaxia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="video-section container">
+            <h2 class="section-title reveal">Míralo en Acción</h2>
+            <div class="video-container reveal">
+                <div class="video-placeholder">
+                    <i data-lucide="play-circle" size="80"></i>
+                    <span>Trailer próximamente</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="descarga" class="download-cta">
+            <div class="cta-content container">
+                <h2 class="reveal">¿Listo para el Despegue?</h2>
+                <div class="store-links reveal">
+                    <a href="#" class="btn btn-primary si-senor-btn">
+                        <span>SI</span>
+                    </a>
+                </div>
+                <div class="social-links reveal">
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+            <div class="cta-bg" style="background-image: url('Background.png');"></div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Flappy Spaces. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="floating-astro" class="astro-idle"></div>
+
+    <script src="main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
 
 </html>
