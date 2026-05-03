@@ -41,7 +41,7 @@ h2,
 h3 {
     font-family: 'Press Start 2P', system-ui;
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: 0.8px;
     color: var(--primary);
     text-shadow:
         3px 3px 0px #000,
@@ -389,12 +389,12 @@ nav {
     background: linear-gradient(to bottom, #928FB8, transparent);
     z-index: 1;
 }
-
+/*Edición para eliminar sombra*/
 .video-section {
-    padding: 300px 0 100px 0;
-    background: var(--bg-dark);
+    /*padding: 300px 0 100px 0;*/
+    /*background: var(--bg-dark);*/
     text-align: center;
-    position: relative;
+    /*position: relative;*/
 }
 
 .video-section::before {
