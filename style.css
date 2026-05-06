@@ -478,7 +478,7 @@ nav {
 .store-links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 50px;
     margin-bottom: 3rem;
 }
 
@@ -672,7 +672,12 @@ nav {
         font-size: 1rem;
     }
 }
-
+@media (max-width: 768px){
+    .store-links{
+        flex-direction: column;
+        gap: 25px;
+    }
+}
 #floating-astro {
     position: fixed;
     top: 80%;
